@@ -18,7 +18,7 @@ model User {
   id        String   @id @default(cuid())
   email     String   @unique
   username  String   @unique
-  clearkId  String   @unique
+  clerkId   String   @unique
   name      String?
   bio       String?
   image     String?
