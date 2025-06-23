@@ -3,6 +3,7 @@
 import { prisma } from "@/lib/prisma";
 import { getDbUserId } from "./user.action"
 import { revalidatePath } from "next/cache";
+import { Prisma } from "@/generated/prisma";
 
 export async function createPost(content:string, image: string) {
   try {
